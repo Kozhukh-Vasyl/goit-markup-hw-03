@@ -1,36 +1,17 @@
-@font-face {
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet">
-  }
+/* COLOR */
+/* (основний колір фону) primary-background-color #FFFFFF */
+/* (допоміжний колір фону) second-backgraund-color #F5F4FA */
+/* (акцент bgc) accent-bgc #2F303A */
+/* (основний колір тексту) primary-text-color #757575 */
+/* (допоміжний колір тексту) sekondary-text-color #212121 */
+/* (акцент тексту) accent-text-color #2196F3 */
+/* (чорний колір тексту) text-black: #000000; */
+/* (лінк колір) link-color rgba(255, 255, 255, 0.6) */
+/* (колір списку) list-color: #eeeeee */
+/* (тінь кнопки) btn-shadow: rgba(0, 0, 0, 0.15) */
+/* (рядок заголовка) header-linr: #ececec */
 
-  
-  reset
-  html {
-    box-sizing: border-box;
-  }
-  *,
-  *::after,
-  *::before {
-    box-sizing: inherit;
-  }
-  /* COLOR */
-  /* (основний колір фону) primary-background-color #FFFFFF */
-  /* (допоміжний колір фону) second-backgraund-color #F5F4FA */
-  /* (акцент bgc) accent-bgc #2F303A */
-  /* (основний колір тексту) primary-text-color #757575 */
-  /* (допоміжний колір тексту) sekondary-text-color #212121 */
-  /* (акцент тексту) accent-text-color #2196F3 */
-  /* (чорний колір тексту) text-black: #000000; */
-  /* (лінк колір) link-color rgba(255, 255, 255, 0.6) */
-  /* (колір списку) list-color: #eeeeee */
-  /* (тінь кнопки) btn-shadow: rgba(0, 0, 0, 0.15) */
-  /* (рядок заголовка) header-linr: #ececec */
-
-:root
-{
+:root {
   --primary-background-color: #ffffff;
   --second-backgraund-color: #f5f4fa;
   --accent-bgc: #2f303a;
@@ -43,57 +24,48 @@
   --btn-shadow: rgba(0, 0, 0, 0.15);
   --header-linr: #ececec;
 }
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 
-{
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
-  ul 
-{
+ul {
   margin: 0;
   padding-left: 0;
 }
-  button 
-{
+button {
   cursor: pointer;
 }
-address 
-{
-font-style: normal;
+address {
+  font-style: normal;
 }
 
-img 
-{
+img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-body 
-{
+body {
   font-family: "Roboto", sans-serif;
   background: var(--primary-background-color);
   font-size: 14px;
   color: var(--second-text-color);
 }
 
-.link 
-{
+.link {
   text-decoration: none;
 }
 
-.list 
-{
+.list {
   list-style: none;
 }
 
-.container 
-{
+.container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -101,16 +73,13 @@ body
   padding-right: 15px;
 }
 
-section 
-{
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 /* === HEADER === */
-.header 
-{
-  background: var(--primary-background-color);
+.header {
   padding-top: 24px;
   padding-bottom: 25px;
   border-bottom-width: 1px;
@@ -118,50 +87,42 @@ section
   border-bottom-color: var(--header-linr);
 }
 
-.header-nav-list 
-{
+.header-nav-list {
   display: flex;
   gap: 50px;
 }
 
-.header-nav 
-{
+.header-nav {
   display: flex;
   align-items: center;
 }
 
-.header-contact 
-{
+.header-contact {
   display: flex;
   margin-left: auto;
   gap: 50px;
 }
 
-.header-container 
-{
+.header-container {
   display: flex;
 }
 
-.header-nav-after-list 
-{
- display: flex;
- align-items: center;
- gap: 50px;
+.header-nav-after-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
-.logo-type-one
-{
+.logo-type-one {
   color: var(--accent-text-color);
 }
 
-.logo-type 
-{
+.logo-type {
   margin-right: 93px;
 }
 
-.logo-type 
-{
-  font-family: 'Raleway', sans-serif;
+.logo-type {
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -170,13 +131,11 @@ section
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.header-nav-list .link.current 
-{
+.header-nav-list .link.current {
   color: var(--accent-text-color);
 }
 
-.header-link 
-{
+.header-link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -185,14 +144,12 @@ section
 .header-link:hover,
 .header-link:focus,
 .header-mail-link:hover,
-.header-mail-link:focus 
-{
+.header-mail-link:focus {
   color: var(--accent-text-color);
 }
 
-.header-mail-link, 
-.header-tel-link 
-{
+.header-mail-link,
+.header-tel-link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -204,16 +161,13 @@ section
 /* Unique page content */
 
 /* --------hero--------- */
-.hero 
-{ 
+.hero {
   background: var(--accent-bgc);
-  margin-top: 0;
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
-.hero-title 
-{ 
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -223,13 +177,12 @@ section
   color: var(--primary-background-color);
   width: 698px;
   text-align: center;
-  margin: 0 auto; 
-  margin-bottom: 30px;  
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
-.hero-button 
-{
-  max-width: 216px;
+.hero-button {
+  min-width: 216px;
   height: 50px;
   padding: 10px 32px;
   font-weight: 700;
@@ -242,15 +195,14 @@ section
   color: var(--primary-background-color);
   background: var(--accent-text-color);
   box-shadow: 0px 4px 4px var(--btn-shadow);
-  border-radius: 4px; 
-  border: none;  
+  border-radius: 4px;
+  border: none;
   margin: 0 auto;
   display: block;
 }
 
 .hero-button:hover,
-.hero-button:focus 
-{
+.hero-button:focus {
   background: var(--accent-text-color);
   box-shadow: 0px 4px 4px var(--btn-shadow);
   border-radius: 4px;
@@ -258,8 +210,7 @@ section
 }
 
 /* === Our advantages === */
-.visually-hidden 
-{
+.visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -272,8 +223,7 @@ section
   margin: -1px;
 }
 
-.advantage-item-title 
-{ 
+.advantage-item-title {
   font-size: inherit;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -281,8 +231,9 @@ section
   margin-bottom: 10px;
 }
 
-.advantage-list, .work-list, .team-list   
-{
+.advantage-list,
+.work-list,
+.team-list {
   display: flex;
   gap: 30px;
 }
@@ -292,35 +243,32 @@ section
   letter-spacing: 0.03em;
   color: var(--primary-text);
 }
-.work 
-{
+.work {
   padding-top: 0;
 }
 
-/* ------------WORK------------- */
-.section-title
-{
+/* === WORK === */
+.section-title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
- }
+}
 
-/* -------------TEAM--------------- */
-.team { 
+/* === TEAM === */
+.team {
   background: var(--second-backgraund-color);
 }
 
-.team-item 
-{
+.team-item {
   background: var(--primary-background-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-item-title 
-{ 
+.team-item-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -329,8 +277,7 @@ section
   margin-bottom: 10px;
 }
 
-.team-text 
-{
+.team-text {
   font-size: 16px;
   line-height: 1.8;
   text-align: center;
@@ -346,22 +293,18 @@ section
 /* === PORTFOLIO === */
 
 /* === Button menu page filter === */
-.filter .section
-{
+.filter .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.filter-list 
-{
+.filter-list {
   margin-bottom: 50px;
   display: flex;
-  display: inline block;
   justify-content: center;
   gap: 8px;
 }
 
-.filter-btn 
-{
+.filter-btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -370,88 +313,72 @@ section
   letter-spacing: 0.03em;
   color: var(--second-text-color);
   background: var(--second-backgraund-color);
-  border-radius:4px;
+  border-radius: 4px;
   border: 4px solid transparent;
   min-width: 73px;
-  padding: 6px 25px;
+  padding: 6px 22px;
 }
 
 .filter-btn:hover,
-.filter-btn:hover 
-{
+.filter-btn:hover {
   color: var(--primary-background-color);
   background: var(--accent-text-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   cursor: pointer;
 }
 
-/* --- images portfolio --- */
-.gallery-list a 
-{
+/* === images portfolio === */
+.gallery-list a {
   text-decoration: none;
 }
 
-.gallery-wrap 
-{
+.gallery-wrap {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
-.title 
-{
+.title {
   min-width: 322px;
   margin-bottom: 4px;
 }
-.gallery-list .title 
-{
+.gallery-list .title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--second-text-color);
 }
 
-.gallery-list p 
-{
+.gallery-list p {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primary-text);
 }
 
-.gallery-item 
-{
+.gallery-item {
   background: var(--primary-background-color);
   border: 1px solid var(--list-color);
+  width: calc((100% - 60px) / 3);
 }
 
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
-  gap:30px;
-}
-
-.gallery-item
-{
-  width: calc((100% - 90px) / 3);
+  gap: 30px;
 }
 
 /* === FOOTER === */
-.footer 
-{
+.footer {
   background: var(--accent-bgc);
+  padding: 60px 0;
+}
 
-}
-.footer .container
-{
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-.footer-logo 
-{
-  font-family: 'Raleway',sans-serif;
+.footer-logo {
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -462,26 +389,23 @@ section
   margin-bottom: 20px;
 }
 
-.footer-logo-w 
-{
-  color:  var(--accent-text-color);
+.footer-logo-w {
+  color: var(--accent-text-color);
 }
 
-.footer-item:not(:last-child) 
-{ 
+.footer-item:not(:last-child) {
   font-style: normal;
-  margin-bottom: 9px;;
+  margin-bottom: 9px;
 }
 
-.footer-item-link {      
+.footer-item-link {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--primary-background-color);
 }
 
 .footer-m-link,
-.footer-t-link
-{ 
+.footer-t-link {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--link-color);
@@ -490,25 +414,13 @@ section
 .footer-t-link:hover,
 .footer-t-link:focus,
 .footer-m-link:hover,
-.footer-m-link:focus 
-{
+.footer-m-link:focus {
   color: var(--accent-text-color);
 }
 
-.adress-title 
-{
+.adress-title {
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--primary-background-color)
+  color: var(--primary-background-color);
 }
 /* -=-=-=-=-=-=-=-=- */
-
-
-
-
-
-
-
-
-
-
